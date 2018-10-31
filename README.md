@@ -1,5 +1,5 @@
 # Adsetus Unity SDK
-SDK Version: 1.0.6
+SDK Version: 1.0.9
 
 ## Overview
 ...
@@ -17,5 +17,7 @@ Adsetus.Init("YOUR_APP_ID");
 ### 3. Play an Ad
 
 ```Java
-Adsetus.ShowAd();
+if (Adsetus.IsAdLoaded()) {
+    Adsetus.ShowAd();
+}
 ```

@@ -8,6 +8,8 @@ public class DemoScript : MonoBehaviour {
 	}
 
 	void Start () {
-		Adsetus.Init ("YOUR_APP_ID");
+		if (Adsetus.IsAdLoaded()) {
+			Adsetus.Init ("YOUR_APP_ID");
+		}
 	}
 }
